@@ -1,6 +1,8 @@
-﻿using CurdProject.Entity;
+﻿
+using CurdProject.Models.Entity;
 
 namespace CurdProject.DAL
+
 {
     public class Repository
     {
@@ -33,6 +35,12 @@ namespace CurdProject.DAL
             var products = repository.Products.ToList();
             return products;
 
+
+        }
+        public Product GetId(int id)
+        {
+            var product = repository.Products.Where(x => x.Id == id).FirstOrDefault();
+            return product;
 
         }
 

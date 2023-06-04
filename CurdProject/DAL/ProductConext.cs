@@ -1,4 +1,5 @@
-﻿using CurdProject.Entity;
+﻿
+using CurdProject.Models.Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace CurdProject.DAL
