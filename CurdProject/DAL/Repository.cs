@@ -19,7 +19,7 @@ namespace CurdProject.DAL
             productedit.Name = product.Name;
             productedit.Price = product.Price;
             productedit.Count=product.Count;
-            repository.Products.Add(productedit);
+          
             repository.SaveChanges();
 
         }
